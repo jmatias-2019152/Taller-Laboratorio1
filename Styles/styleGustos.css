@@ -2,10 +2,15 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
-     font-family: 'open sans';   
+    font-family: 'open sans';   
+    justify-content:  center;
+    align-items: center;
+    min-height: 100vh;
+    
 }
 
 .contenedor{
@@ -65,63 +70,29 @@ header .textos-header{
     color: #000000;
 }
 
-.textos-header h2{
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
-}
-
 .wave{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.contenedor-sobre-nosotros{
-    background-color: #4d0686;
+.fondo{
+    background:rgba(255, 255, 255, 0.8);
+}
+
+.texto{
     display: flex;
     justify-content: space-evenly;
-}
-
-.imagen-about-us{
-    width: 40%;
-}
-
-.sobre-nosotros .contenido-textos{
-    width: 40%;
-}
-
-.contenido-textos h3{
-    margin-bottom: 15px;
-}
-
-.contenido-textos h3 span{
-    background: #4d0686;  
-    color: #fff;  
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
-}
-
-.contenido-textos p{
-    padding: 0px 0px 30px 15px;
-    font-weight: 300;
-    text-align: justify;
-}
-
-.portafolio{
-    background: #f2f2f2;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .galeria-port{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .imagen-port{
@@ -131,7 +102,8 @@ header .textos-header{
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 6px 0 rgba(1, 30, 248, 0.5);
+    border-radius: 10px;
 }
 
 .imagen-port > img{
@@ -139,71 +111,6 @@ header .textos-header{
     height: 100%;
     object-fit: conver;
     display: block;
-}
-
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0); 
-    background: hsla(237, 91%, 27%, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-        color: #fff;
-}
-
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
-}
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards .card{
-    background: #4d0686;
-    display: flex;
-    width:  46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-}
-
-.cards .card > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-}
-
-.about-services{
-    background: #f2f2f2;
-    padding-bottom: 30px;
 }
 
 .servicio-cont{
@@ -231,7 +138,13 @@ header .textos-header{
 }
 
 footer{
-    background: #414141;
+
+    background: -webkit-linear-gradient(to right, hsla(252, 100%, 49%, 0.61), hsla(252, 100%, 49%, 0.61)), url(../img/fondo.jpg);  
+    background: linear-gradient(to right, hsla(199, 100%, 50%, 0.61), hsla(199, 100%, 50%, 0.61)), url(../img/fondo.jpg); 
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -264,17 +177,16 @@ footer{
     margin: 20px 0; /* Margen superior e inferior */
 }
 
-/* Resetear algunos estilos por defecto del navegador */
+
 body, h1, p, ul {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Estilos de la barra de navegación */
 nav {
     
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     opacity: 0.5;
 }
@@ -294,9 +206,41 @@ a {
     text-decoration: none;
     color: rgb(4, 4, 4);
     font-weight: bold;
-    transition: color 0.3s; /* Transición de color al pasar el mouse */
+    transition: color 0.3s; 
 }
 
 a:hover {
-    color: #1900ff; /* Cambia el color al pasar el mouse */
+    color: #1900ff;
+}
+
+.wrapper{
+
+    margin: 150px auto;
+    width: 70% ;
+
+}
+
+img{
+    max-width: 320px ;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-box{
+    color: #ffffff;
+}
+
+.text-box h2{
+    font-size: 42px;
+}
+
+.text-box p {
+    font-size: 16px;
+}
+
+p{
+    text-align: justify;
+
 }
