@@ -48,16 +48,19 @@ a:hover {
 }
 
 .contenedor{
-    background-color: #e20404;
+    background-color: #ffff;
     height: 100vh;
     margin: 5%;
     display: flex;
     padding: 10px;
     flex-direction: column;
+    border-radius: 10px;
+    border: #00ffee;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.contenedor img{
-    justify-content: end;
-    align-items: end;
+.esp{
+    align-items: flex-end;
 }
+
