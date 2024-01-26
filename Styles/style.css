@@ -5,13 +5,13 @@ body, h1, p, ul {
     text-align: center;
 }
 
-/* Estilos de la barra de navegación */
-nav {
 
-    padding: 15px;
-    text-align: center;
+nav {
+    padding: 30px;
+    text-align: end;
     opacity: 0.5;
 }
+
 
 ul {
     list-style-type: none;
