@@ -57,10 +57,26 @@ a:hover {
     border-radius: 10px;
     border: #00ffee;
     justify-content: flex-start;
+    align-items: center;
+}
+ 
+.contenedor div{
+
+    justify-items: flex-start;
     align-items: flex-start;
+
 }
 
-.esp{
-    align-items: flex-end;
-}
+footer{
 
+    background: -webkit-linear-gradient(to right, hsla(252, 100%, 49%, 0.61), hsla(252, 100%, 49%, 0.61)), url(../Resources/img/fondo.jpg);  
+    background: linear-gradient(to right, hsla(199, 100%, 50%, 0.61), hsla(199, 100%, 50%, 0.61)), url(../Resources/img/fondo.jpg); 
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 40px;
+    padding: 6px 0 6px 0;
+    margin: auto;
+    overflow: hidden;
+}
